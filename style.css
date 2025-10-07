@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Monoton&family=Mozilla+Headline:wght@200..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #d231e0;
+  background: linear-gradient(to left, rgba(210, 49, 224, 1) 0%, rgba(237, 83, 150, 1) 100%);
+  min-height: 500px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  border: 2px solid rgb(243, 226, 226);
+  border-radius: 10px;
+  width: 60%;
+  height: 500px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.player-0,
+.player-1 {
+  width: 50%;
+  /* border: 1px solid black; */
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  /* text-decoration: underline */
+}
+
+.score-0,
+.score-1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(255, 20, 147)
+}
+
+.current-box {
+  border: transparent;
+  padding: 5px;
+  border-radius: 5%;
+  background-color: rgb(255, 20, 147, 0.5);
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 30%;
+}
+.active .current-box{
+     background-color: rgb(255, 20, 147);
+}
+
+.current {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.current-score-0,
+.current-score-1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.reset {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.628);
+  padding: 10px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  left: 340px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.dice {
+  position: absolute;
+  top: 150px;
+  left: 360px;
+}
+
+.roll {
+  background-color: rgba(255, 255, 255, 0.628);
+  border-radius: 10px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 340px;
+  left: 350px;
+  cursor: pointer;
+}
+
+.hold {
+  background-color: rgba(255, 255, 255, 0.628);
+  border-radius: 10px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 390px;
+  left: 370px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+ }
+
+
+ .winner {
+  background-color: rgba(0, 0, 0, 0.453);
+ }
